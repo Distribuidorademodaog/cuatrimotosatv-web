@@ -1,0 +1,64 @@
+# Generado por scripts/htaccess.mjs — no editar a mano.
+# OJO: si alguien ya toco el .htaccess en el servidor, compara antes de subir.
+
+Options -Indexes
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # --- forzar https y quitar www ---
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+  # --- rutas heredadas de WordPress ---
+  RewriteRule ^inicio/?$ / [R=301,L]
+  RewriteRule ^shop/?$ /tienda [R=301,L]
+  RewriteRule ^producto/atv\-110/?$ /productos/cuatrimoto-boss-110cc [R=301,L]
+  RewriteRule ^producto/atv\-125/?$ /productos/cuatrimoto-boss-125cc [R=301,L]
+  RewriteRule ^producto/atv\-200/?$ /productos/cuatrimoto-boss-200cc [R=301,L]
+  RewriteRule ^producto/atv\-250\-titan\-250/?$ /productos/cuatrimoto-titan-250cc [R=301,L]
+  RewriteRule ^producto/arenero\-200/?$ /productos/buggy-arenero-200cc [R=301,L]
+  RewriteRule ^producto/buggie\-campero\-200/?$ /productos/buggy-campero-200cc [R=301,L]
+  RewriteRule ^producto/atv\-350cc\-4x4/?$ /productos/cuatrimoto-ranger-350cc [R=301,L]
+  RewriteRule ^producto/carro\-de\-golf/?$ /productos/carro-de-golf-electrico [R=301,L]
+  RewriteRule ^cart/?$ /tienda [R=301,L]
+  RewriteRule ^checkout/?$ /tienda [R=301,L]
+  RewriteRule ^my\-account/?$ /contacto [R=301,L]
+
+  # feeds, buscador y panel de WordPress: ya no existen
+  RewriteRule ^feed/?$ / [R=301,L]
+  RewriteRule ^wp-admin/?.*$ / [R=301,L]
+  RewriteRule ^wp-login\.php$ / [R=301,L]
+  RewriteRule ^\?s=.*$ /tienda [R=301,L]
+</IfModule>
+
+# --- cache: los assets de Astro llevan hash, se pueden cachear para siempre ---
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp              "access plus 1 year"
+  ExpiresByType image/avif              "access plus 1 year"
+  ExpiresByType image/jpeg              "access plus 1 year"
+  ExpiresByType image/png               "access plus 1 year"
+  ExpiresByType image/svg+xml           "access plus 1 year"
+  ExpiresByType text/css                "access plus 1 year"
+  ExpiresByType application/javascript  "access plus 1 year"
+  ExpiresByType text/html               "access plus 10 minutes"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(webp|avif|jpg|jpeg|png|svg|css|js|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript
+  AddOutputFilterByType DEFLATE image/svg+xml application/json
+</IfModule>
+
+ErrorDocument 404 /404.html

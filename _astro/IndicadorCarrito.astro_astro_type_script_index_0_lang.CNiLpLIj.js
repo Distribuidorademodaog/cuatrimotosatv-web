@@ -1,0 +1,1 @@
+import{o as n,b as r,t as d}from"./carrito.CnIQZ-ry.js";const o=e=>{const{unidades:t}=d(e);document.querySelectorAll("[data-contador]").forEach(a=>{a.textContent=String(t),a.hidden=t===0})};o(n());r(o);
