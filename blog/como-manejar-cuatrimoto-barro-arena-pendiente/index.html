@@ -196,14 +196,34 @@ Precios en pesos colombianos, sujetos a cambio sin previo aviso.
             var href = a.getAttribute('href') || '';
             var num = (href.match(/wa\.me\/(\d+)/) || [])[1] || '';
 
+            var tipo = donde(a);
+            var prod = producto(a);
+
             var datos = JSON.stringify({
-              tipo: donde(a),
-              prod: producto(a),
+              tipo: tipo,
+              prod: prod,
               ruta: location.pathname,
               disp: esMovil() ? 'movil' : 'escritorio',
               ref: document.referrer || '',
               num: num,
             });
+
+            // El pixel de Meta, en su PROPIO try/catch: si Meta falla o un
+            // bloqueador lo borra, el contador propio tiene que seguir contando.
+            // `Contact` es el evento estandar para «inicio de conversacion», que
+            // en este negocio es la conversion real: no hay carrito que cierre
+            // la venta, se cierra por WhatsApp.
+            try {
+              if (typeof window.fbq === 'function') {
+                window.fbq('track', 'Contact', {
+                  content_name: prod || tipo,
+                  content_category: tipo,
+                  source: 'whatsapp',
+                });
+              }
+            } catch (e) {
+              /* el pixel nunca puede estorbar la venta */
+            }
 
             // text/plain a proposito: es un tipo permitido por CORS sin
             // preflight. Con application/json el navegador pediria permiso
