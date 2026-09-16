@@ -57,7 +57,7 @@ DirectoryIndex index.html
   RewriteRule ^feed/?$ / [R=301,L]
   RewriteRule ^wp-admin/?.*$ / [R=301,L]
   RewriteRule ^wp-login\.php$ / [R=301,L]
-  RewriteRule ^\?s=.*$ /tienda [R=301,L]
+  RewriteRule ^\?s=.*$ /tienda/ [R=301,L]
 </IfModule>
 
 # --- cache: los assets de Astro llevan hash, se pueden cachear para siempre ---
