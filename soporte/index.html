@@ -4,12 +4,32 @@
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
         if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        n.queue=[];}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', pixel);
         fbq('track', 'PageView');
+        (function () {
+          var cargado = false;
+          function cargar() {
+            if (cargado) return;
+            cargado = true;
+            var t = document.createElement('script');
+            t.async = true;
+            t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+            document.head.appendChild(t);
+          }
+          var eventos = ['pointerdown', 'keydown', 'touchstart', 'scroll'];
+          function porInteraccion() {
+            eventos.forEach(function (e) { window.removeEventListener(e, porInteraccion); });
+            cargar();
+          }
+          eventos.forEach(function (e) {
+            window.addEventListener(e, porInteraccion, { once: true, passive: true });
+          });
+          setTimeout(cargar, 3500);
+          if ('requestIdleCallback' in window) requestIdleCallback(cargar, { timeout: 3000 });
+          else window.addEventListener('load', function () { setTimeout(cargar, 1200); });
+        })();
       })();</script><link rel="stylesheet" href="/_astro/buggies.Bj4y9-7Q.css">
 <style>.encabezado[data-astro-cid-a6jmaefp]{position:relative;padding:clamp(2.75rem,6vw,4.5rem) 0 clamp(2.5rem,5vw,3.75rem);background:radial-gradient(90% 140% at 0% 0%,rgb(210 65 10 / 20%) 0%,transparent 62%),var(--carbon);border-bottom:1px solid var(--borde);overflow:hidden}.encabezado[data-astro-cid-a6jmaefp]:before{content:"";position:absolute;right:-60px;bottom:-40px;width:260px;height:260px;background:var(--degradado);opacity:.08;transform:rotate(28deg);pointer-events:none}.encabezado[data-astro-cid-a6jmaefp] h1[data-astro-cid-a6jmaefp]{font-size:clamp(2.4rem,6vw,4.4rem);margin:0;max-width:18ch}.encabezado[data-astro-cid-a6jmaefp] .entradilla[data-astro-cid-a6jmaefp]{margin:1.1rem 0 0}.miga[data-astro-cid-a6jmaefp]{font-family:var(--titulo);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.1rem;color:var(--texto-tenue)}.miga[data-astro-cid-a6jmaefp] a[data-astro-cid-a6jmaefp]{color:var(--texto-suave);text-decoration:none}.miga[data-astro-cid-a6jmaefp] a[data-astro-cid-a6jmaefp]:hover{color:var(--brasa-alta)}.miga[data-astro-cid-a6jmaefp] span[data-astro-cid-a6jmaefp][aria-hidden]{margin:0 .45rem;color:var(--texto-tenue)}
 .prosa[data-astro-cid-2m4n75ke]{max-width:74ch}.prosa[data-astro-cid-2m4n75ke] h2{font-size:clamp(1.4rem,2.8vw,1.9rem);margin-top:2.75rem;padding-top:1.75rem;border-top:1px solid var(--borde);text-transform:uppercase}.prosa[data-astro-cid-2m4n75ke] h2:first-of-type{border-top:0;padding-top:0;margin-top:1rem}.prosa[data-astro-cid-2m4n75ke] h3{font-family:var(--titulo);font-weight:700;font-size:1.15rem;letter-spacing:.02em;margin-top:1.9rem;color:var(--texto)}.prosa[data-astro-cid-2m4n75ke] p,.prosa[data-astro-cid-2m4n75ke] li{color:var(--texto-suave)}.prosa[data-astro-cid-2m4n75ke] ul{padding-left:1.2rem;margin-bottom:1.2rem}.prosa[data-astro-cid-2m4n75ke] li{margin-bottom:.5rem}.prosa[data-astro-cid-2m4n75ke] strong{color:var(--texto)}.prosa[data-astro-cid-2m4n75ke] a{color:var(--brasa-alta);text-underline-offset:2px}.prosa[data-astro-cid-2m4n75ke] .vigencia{display:inline-block;background:var(--grafito);border:1px solid var(--borde);border-radius:99px;padding:.35rem 1rem;font-family:var(--titulo);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;color:var(--texto-suave);margin-bottom:1.75rem}

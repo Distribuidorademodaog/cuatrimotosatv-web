@@ -4,12 +4,32 @@
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
         if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        n.queue=[];}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', pixel);
         fbq('track', 'PageView');
+        (function () {
+          var cargado = false;
+          function cargar() {
+            if (cargado) return;
+            cargado = true;
+            var t = document.createElement('script');
+            t.async = true;
+            t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+            document.head.appendChild(t);
+          }
+          var eventos = ['pointerdown', 'keydown', 'touchstart', 'scroll'];
+          function porInteraccion() {
+            eventos.forEach(function (e) { window.removeEventListener(e, porInteraccion); });
+            cargar();
+          }
+          eventos.forEach(function (e) {
+            window.addEventListener(e, porInteraccion, { once: true, passive: true });
+          });
+          setTimeout(cargar, 3500);
+          if ('requestIdleCallback' in window) requestIdleCallback(cargar, { timeout: 3000 });
+          else window.addEventListener('load', function () { setTimeout(cargar, 1200); });
+        })();
       })();</script><link rel="stylesheet" href="/_astro/buggies.Bj4y9-7Q.css">
 <style>.encabezado[data-astro-cid-a6jmaefp]{position:relative;padding:clamp(2.75rem,6vw,4.5rem) 0 clamp(2.5rem,5vw,3.75rem);background:radial-gradient(90% 140% at 0% 0%,rgb(210 65 10 / 20%) 0%,transparent 62%),var(--carbon);border-bottom:1px solid var(--borde);overflow:hidden}.encabezado[data-astro-cid-a6jmaefp]:before{content:"";position:absolute;right:-60px;bottom:-40px;width:260px;height:260px;background:var(--degradado);opacity:.08;transform:rotate(28deg);pointer-events:none}.encabezado[data-astro-cid-a6jmaefp] h1[data-astro-cid-a6jmaefp]{font-size:clamp(2.4rem,6vw,4.4rem);margin:0;max-width:18ch}.encabezado[data-astro-cid-a6jmaefp] .entradilla[data-astro-cid-a6jmaefp]{margin:1.1rem 0 0}.miga[data-astro-cid-a6jmaefp]{font-family:var(--titulo);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.1rem;color:var(--texto-tenue)}.miga[data-astro-cid-a6jmaefp] a[data-astro-cid-a6jmaefp]{color:var(--texto-suave);text-decoration:none}.miga[data-astro-cid-a6jmaefp] a[data-astro-cid-a6jmaefp]:hover{color:var(--brasa-alta)}.miga[data-astro-cid-a6jmaefp] span[data-astro-cid-a6jmaefp][aria-hidden]{margin:0 .45rem;color:var(--texto-tenue)}
 .faq[data-astro-cid-up6lqizr]{max-width:76ch}.faq__enlaces[data-astro-cid-up6lqizr]{color:var(--texto-suave);font-size:.95rem}.faq__enlaces[data-astro-cid-up6lqizr] a[data-astro-cid-up6lqizr]{color:var(--brasa-alta)}details[data-astro-cid-up6lqizr]{border:1px solid var(--borde);border-radius:var(--radio);margin-bottom:.85rem;background:var(--carbon);overflow:hidden}details[data-astro-cid-up6lqizr][open]{border-color:var(--brasa);box-shadow:0 8px 24px -10px #000000a6}summary[data-astro-cid-up6lqizr]{cursor:pointer;padding:1.1rem 3rem 1.1rem 1.3rem;font-family:var(--titulo);font-size:1.2rem;font-weight:600;position:relative;list-style:none}summary[data-astro-cid-up6lqizr]::-webkit-details-marker{display:none}summary[data-astro-cid-up6lqizr]:after{content:"+";position:absolute;right:1.2rem;top:50%;transform:translateY(-50%);font-size:1.6rem;color:var(--brasa);line-height:1}details[data-astro-cid-up6lqizr][open] summary[data-astro-cid-up6lqizr]:after{content:"−"}summary[data-astro-cid-up6lqizr]:hover{background:var(--grafito)}.faq__cuerpo[data-astro-cid-up6lqizr]{padding:0 1.3rem 1.2rem}.faq__cuerpo[data-astro-cid-up6lqizr] p[data-astro-cid-up6lqizr]{color:var(--texto-suave);margin-bottom:.8rem}.faq__cuerpo[data-astro-cid-up6lqizr] p[data-astro-cid-up6lqizr]:last-child{margin-bottom:0}.faq__cierre[data-astro-cid-up6lqizr]{margin-top:3rem;padding:2rem;background:var(--grafito);border-radius:var(--radio)}.faq__cierre[data-astro-cid-up6lqizr] h2[data-astro-cid-up6lqizr]{font-size:1.6rem}.faq__cierre[data-astro-cid-up6lqizr] p[data-astro-cid-up6lqizr]{color:var(--texto-suave)}
