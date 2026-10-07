@@ -28,6 +28,7 @@
 
 ## Catálogo por tipo
 
+- [Inicio](https://cuatrimotosatv.com/): la portada, con el catálogo completo y los datos del showroom.
 - [Cuatrimotos](https://cuatrimotosatv.com/cuatrimotos/): Las cinco cuatrimotos del catálogo, de 110 a 350 cc, con precio, cilindraje y tracción a la vista.
 - [Buggies](https://cuatrimotosatv.com/buggies/): Buggies de estructura tubular con cinturones de cuatro puntos, para plan deportivo o para cargar.
 - [Carros de golf](https://cuatrimotosatv.com/carros-de-golf/): Movilidad interna eléctrica para conjuntos, hoteles, clubes y fincas: silenciosa y sin combustible.
@@ -38,6 +39,7 @@
 
 ## Guías
 
+- [Blog](https://cuatrimotosatv.com/blog/): el índice de las 15 guías.
 - [Cuatrimoto usada: qué revisar y cuándo sale más cara](https://cuatrimotosatv.com/blog/cuatrimoto-usada-o-nueva/): Vendemos nuevas y lo decimos de entrada. Aun así, esta es la lista con la que evaluamos una usada: papeles, chasis, tracción y lo que nadie pregunta. (actualizado 2026-10-07)
 - [¿Cuánto cuesta mantener una cuatrimoto en Colombia?](https://cuatrimotosatv.com/blog/cuanto-cuesta-mantener-una-cuatrimoto/): No depende de lo que pagaste, sino de la tracción, la refrigeración, el cilindraje y el terreno. Qué se gasta, en qué orden y qué cubre la garantía. (actualizado 2026-10-07)
 - [Carro de golf eléctrico para conjuntos: costo y permisos](https://cuatrimotosatv.com/blog/carro-de-golf-para-conjuntos/): 80 km por carga, 48 V y cuatro pasajeros. Qué cuesta en operación frente a uno de gasolina y qué suele pedir una copropiedad para aprobar la compra. (actualizado 2026-10-07)
