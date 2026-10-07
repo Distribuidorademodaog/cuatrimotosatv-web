@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Índice legible para asistentes de IA: los 9 modelos con precio y ficha, las
+# guías y los datos del negocio en un solo archivo de texto.
+# llms.txt: https://cuatrimotosatv.com/llms.txt
+
 Sitemap: https://cuatrimotosatv.com/sitemap-index.xml
