@@ -13,6 +13,19 @@ DirectoryIndex index.html
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
+  # --- quitar parametros utm_*: mismo documento, URL distinta ---
+  # El enlace de la ficha de Google apunta a
+  #   /?utm_source=google&utm_medium=organic&utm_campaign=gbp
+  # y Google la indexo como URL aparte. Del 27-sep al 10-oct paso de 0 a 1.401
+  # impresiones por semana: el 12,5 % de las atribuidas a paginas, compitiendo
+  # con la portada limpia y a veces por delante de ella. El canonical ya
+  # apuntaba bien y no basto; un 301 si consolida.
+  # No se pierde medicion: `analitica.ga4` esta vacio, ese utm no atribuye nada.
+  # Se excluye /gracias/, que recibe los parametros de vuelta de la pasarela.
+  RewriteCond %{REQUEST_URI} !^/gracias/
+  RewriteCond %{QUERY_STRING} (^|&)utm_[a-z_]+= [NC]
+  RewriteRule ^(.*)$ /$1? [R=301,L]
+
   # --- rutas heredadas de WordPress ---
   RewriteRule ^inicio/?$ / [R=301,L]
   RewriteRule ^shop/?$ /tienda/ [R=301,L]
