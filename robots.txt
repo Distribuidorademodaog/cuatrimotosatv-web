@@ -1,11 +1,34 @@
+# Los rastreadores de citación van nombrados uno a uno, no solo cubiertos por el
+# comodín: varios operadores leen la regla más específica que les aplique, y un
+# «User-agent: *» deja la intención implícita. Nombrarlos no cambia el permiso,
+# lo deja por escrito.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 User-agent: *
 Allow: /
 
-# Índice legible para asistentes de IA: los 9 modelos con precio y ficha, las
-# guías y los datos del negocio en un solo archivo de texto.
-# llms.txt: https://cuatrimotosatv.com/llms.txt
-# ai.txt:   https://cuatrimotosatv.com/.well-known/ai.txt
-# resumen:  https://cuatrimotosatv.com/ai/summary.json
-# feed:     https://cuatrimotosatv.com/blog/rss.xml
+# Índices legibles por máquinas: los 9 modelos con precio y ficha, las guías y
+# los datos del negocio. Todos se regeneran del catálogo en cada publicación.
+# llms.txt:      https://cuatrimotosatv.com/llms.txt
+# llms-full.txt: https://cuatrimotosatv.com/llms-full.txt
+# ai.txt:        https://cuatrimotosatv.com/.well-known/ai.txt
+# resumen:       https://cuatrimotosatv.com/ai/summary.json
+# feed:          https://cuatrimotosatv.com/blog/rss.xml
 
 Sitemap: https://cuatrimotosatv.com/sitemap-index.xml

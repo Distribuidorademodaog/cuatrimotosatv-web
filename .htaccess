@@ -13,6 +13,14 @@ DirectoryIndex index.html
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
+  # --- negociacion de contenido markdown ---
+  # Un agente que pide `Accept: text/markdown` recibe el contenido en texto
+  # (llms-full.txt: las 9 fichas completas, las 17 preguntas y las condiciones)
+  # en vez del HTML. Ningun navegador manda esa cabecera, asi que no afecta a
+  # las personas. Es la misma idea que el llms.txt, por la via del protocolo.
+  RewriteCond %{HTTP_ACCEPT} text/markdown [NC]
+  RewriteRule ^$ /llms-full.txt [L,E=PIDIO_MD:1]
+
   # --- quitar parametros utm_*: mismo documento, URL distinta ---
   # El enlace de la ficha de Google apunta a
   #   /?utm_source=google&utm_medium=organic&utm_campaign=gbp
@@ -87,6 +95,10 @@ DirectoryIndex index.html
 </IfModule>
 
 <IfModule mod_headers.c>
+  # Solo a quien pidio markdown se le declara markdown. Marcar el archivo
+  # como text/markdown SIEMPRE haria que el navegador lo descargue en vez de
+  # mostrarlo, y nosotros tambien lo abrimos para revisarlo.
+  Header set Content-Type "text/markdown; charset=utf-8" env=PIDIO_MD
   <FilesMatch "\.(webp|avif|jpg|jpeg|png|svg|css|js|woff2)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
