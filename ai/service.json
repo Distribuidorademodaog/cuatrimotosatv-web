@@ -1,0 +1,73 @@
+{
+  "provider": {
+    "name": "Cuatrimotos ATV Riders",
+    "legalName": "CUATRIMOTOS ATV RIDER S.A.S",
+    "taxId": "901808803-5",
+    "url": "https://cuatrimotosatv.com/",
+    "areaServed": [
+      "Bogotá",
+      "Cota",
+      "Chía",
+      "Cundinamarca",
+      "Colombia"
+    ],
+    "location": "Cota, Cundinamarca, Colombia"
+  },
+  "lastUpdated": "2026-10-15",
+  "inLanguage": "es-CO",
+  "services": [
+    {
+      "name": "Venta de vehículos todo terreno",
+      "description": "Cuatrimotos, buggies y carros de golf nuevos. 9 modelos en stock, de 4990000 COP a 39990000 COP.",
+      "url": "https://cuatrimotosatv.com/tienda/",
+      "availability": "in_stock"
+    },
+    {
+      "name": "Asesoría de compra",
+      "description": "Selección del modelo según terreno, pendiente, carga y quién maneja, antes de hablar de presupuesto.",
+      "url": "https://cuatrimotosatv.com/contacto/"
+    },
+    {
+      "name": "Garantía y postventa",
+      "description": "Un año en chasis y motor, seis meses en partes eléctricas. Taller propio en el mismo sitio que el showroom.",
+      "url": "https://cuatrimotosatv.com/soporte/"
+    },
+    {
+      "name": "Repuestos",
+      "description": "Piezas de estructura y motor para los equipos que vendemos. Línea telefónica dedicada.",
+      "url": "https://cuatrimotosatv.com/repuestos/"
+    },
+    {
+      "name": "Entrega y envíos",
+      "description": "Retiro en el showroom de Cota o envío por transportadora; aproximadamente 400000 COP fuera de Bogotá.",
+      "url": "https://cuatrimotosatv.com/financiacion/"
+    }
+  ],
+  "doesNotOffer": [
+    "Venta de vehículos usados",
+    "Fabricación: somos distribuidores de las marcas indicadas en cada ficha",
+    "Ropa o equipamiento personal"
+  ],
+  "contact": {
+    "authorizedNumbers": [
+      {
+        "number": "+57 321 498 0039",
+        "role": "Ventas · línea principal"
+      },
+      {
+        "number": "+57 313 232 7099",
+        "role": "Ventas · segunda línea"
+      },
+      {
+        "number": "+57 310 895 6213",
+        "role": "Ventas y solicitudes"
+      },
+      {
+        "number": "+57 318 092 6384",
+        "role": "Venta de repuestos"
+      }
+    ],
+    "email": "servicioalcliente@cuatrimotosatv.com",
+    "hours": "Lunes a viernes 9:00–17:00 · Sábados 9:00–15:00"
+  }
+}
