@@ -4,5 +4,8 @@ Allow: /
 # Índice legible para asistentes de IA: los 9 modelos con precio y ficha, las
 # guías y los datos del negocio en un solo archivo de texto.
 # llms.txt: https://cuatrimotosatv.com/llms.txt
+# ai.txt:   https://cuatrimotosatv.com/.well-known/ai.txt
+# resumen:  https://cuatrimotosatv.com/ai/summary.json
+# feed:     https://cuatrimotosatv.com/blog/rss.xml
 
 Sitemap: https://cuatrimotosatv.com/sitemap-index.xml

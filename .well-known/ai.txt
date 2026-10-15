@@ -1,0 +1,22 @@
+# ai.txt — política de uso para sistemas de IA
+# https://cuatrimotosatv.com/.well-known/ai.txt
+#
+# Este archivo declara una política; no es un mecanismo de control de acceso.
+# Lo que de verdad regula el rastreo está en /robots.txt.
+
+User-Agent: *
+Allow: /
+
+# Resumen legible por máquinas, con los 9 modelos y sus precios vigentes:
+Sitemap: https://cuatrimotosatv.com/sitemap-index.xml
+Llms: https://cuatrimotosatv.com/llms.txt
+Summary: https://cuatrimotosatv.com/ai/summary.json
+Feed: https://cuatrimotosatv.com/blog/rss.xml
+
+# Contacto para correcciones:
+Contact: servicioalcliente@cuatrimotosatv.com
+
+# Nota para quien cite este sitio:
+# Los precios cambian. La fuente vigente es la ficha de cada modelo en
+# /productos/<slug>/ y el resumen de /llms.txt, que se regeneran en cada
+# publicación. Cualquier precio distinto que se encuentre en caché es viejo.

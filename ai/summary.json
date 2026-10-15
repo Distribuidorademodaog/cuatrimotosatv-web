@@ -1,0 +1,238 @@
+{
+  "name": "Cuatrimotos ATV Riders",
+  "legalName": "CUATRIMOTOS ATV RIDER S.A.S",
+  "url": "https://cuatrimotosatv.com/",
+  "description": "Venta y asesoría de cuatrimotos, buggies y carros de golf en Colombia. Asesoría 1:1, entrega lista para rodar y respaldo postventa.",
+  "inLanguage": "es-CO",
+  "lastUpdated": "2026-10-15",
+  "business": {
+    "type": "AutoDealer",
+    "taxId": "901808803-5",
+    "yearsInBusiness": 14,
+    "address": {
+      "street": "Siberia, Parque Agroindustrial de Occidente, Calle 80 Km 1.5, Bodega 1 Local 58",
+      "city": "Cota",
+      "region": "Cundinamarca",
+      "postalCode": "111071",
+      "country": "CO"
+    },
+    "geo": {
+      "latitude": 4.7428294,
+      "longitude": -74.1359197
+    },
+    "hours": "Lunes a viernes 9:00–17:00 · Sábados 9:00–15:00",
+    "areasServed": [
+      "Bogotá",
+      "Cota",
+      "Chía",
+      "Cundinamarca",
+      "Colombia"
+    ],
+    "authorizedContacts": [
+      {
+        "number": "+57 321 498 0039",
+        "role": "Ventas · línea principal"
+      },
+      {
+        "number": "+57 313 232 7099",
+        "role": "Ventas · segunda línea"
+      },
+      {
+        "number": "+57 310 895 6213",
+        "role": "Ventas y solicitudes"
+      },
+      {
+        "number": "+57 318 092 6384",
+        "role": "Venta de repuestos"
+      }
+    ],
+    "email": "servicioalcliente@cuatrimotosatv.com",
+    "sameAs": [
+      "https://www.facebook.com/cuatrimoto01/",
+      "https://www.instagram.com/cuatrimotosatv/",
+      "https://www.tiktok.com/@cuatrimotosatv",
+      "https://www.youtube.com/@cuatrimotosatvrider5296",
+      "https://maps.google.com/?cid=3967244919663343981"
+    ]
+  },
+  "catalog": {
+    "count": 9,
+    "currency": "COP",
+    "priceRange": {
+      "min": 4990000,
+      "max": 39990000
+    },
+    "condition": "new",
+    "items": [
+      {
+        "sku": "ATVR-BOSS-110",
+        "name": "Cuatrimoto Boss 110cc 4x2",
+        "brand": "Boss ATV",
+        "category": "Infantil",
+        "price": 4990000,
+        "url": "https://cuatrimotosatv.com/productos/cuatrimoto-boss-110cc/",
+        "specs": {
+          "Cilindraje": "110 cc",
+          "Tracción": "4×2",
+          "Capacidad": "60 kg",
+          "Transmisión": "Automática con reversa",
+          "Frenos": "Disco trasero / banda delantero",
+          "Seguridad": "Regulador de velocidad"
+        }
+      },
+      {
+        "sku": "ATVR-BOSS-125",
+        "name": "Cuatrimoto Boss 125cc 4x2",
+        "brand": "Boss ATV",
+        "category": "Cuatrimoto",
+        "price": 6990000,
+        "url": "https://cuatrimotosatv.com/productos/cuatrimoto-boss-125cc/",
+        "specs": {
+          "Cilindraje": "125 cc",
+          "Tracción": "4×2",
+          "Potencia": "7,47 HP",
+          "Velocidad máx.": "45 km/h",
+          "Capacidad": "120 kg",
+          "Transmisión": "Semiautomática 3+N+R",
+          "Pendiente máx.": "20°"
+        }
+      },
+      {
+        "sku": "ATVR-BOSS-200",
+        "name": "Cuatrimoto Boss 200cc 4x2",
+        "brand": "Boss ATV",
+        "category": "Cuatrimoto",
+        "price": 13990000,
+        "url": "https://cuatrimotosatv.com/productos/cuatrimoto-boss-200cc/",
+        "specs": {
+          "Cilindraje": "200 cc",
+          "Tracción": "4×2",
+          "Potencia": "17 HP",
+          "Velocidad máx.": "60 km/h",
+          "Capacidad": "200 kg",
+          "Arrastre": "100 kg",
+          "Pendiente máx.": "30°"
+        }
+      },
+      {
+        "sku": "ATVR-TITAN-250",
+        "name": "Cuatrimoto Titan 250cc 4x2",
+        "brand": "TAO Motor",
+        "category": "Cuatrimoto",
+        "price": 15990000,
+        "url": "https://cuatrimotosatv.com/productos/cuatrimoto-titan-250cc/",
+        "specs": {
+          "Cilindraje": "250 cc",
+          "Tracción": "4×2",
+          "Potencia": "19 HP",
+          "Velocidad máx.": "70 km/h",
+          "Capacidad": "250 kg",
+          "Arrastre": "100 kg",
+          "Refrigeración": "Líquida",
+          "Pendiente máx.": "34°"
+        }
+      },
+      {
+        "sku": "ATVR-BUGGY-ARENERO-200",
+        "name": "Buggy Arenero 200cc 4x2",
+        "brand": "Trail Blazer",
+        "category": "Buggy",
+        "price": 21490000,
+        "url": "https://cuatrimotosatv.com/productos/buggy-arenero-200cc/",
+        "specs": {
+          "Cilindraje": "200 cc",
+          "Tracción": "4×2",
+          "Potencia": "20 HP",
+          "Velocidad máx.": "60 km/h",
+          "Capacidad": "280 kg",
+          "Frenos": "Disco hidráulico",
+          "Seguridad": "Cinturón 4 puntos"
+        }
+      },
+      {
+        "sku": "ATVR-BUGGY-CAMPERO-200",
+        "name": "Buggy Campero 200cc 4x2",
+        "brand": "Trail Blazer",
+        "category": "Buggy",
+        "price": 24990000,
+        "url": "https://cuatrimotosatv.com/productos/buggy-campero-200cc/",
+        "specs": {
+          "Cilindraje": "200 cc",
+          "Tracción": "4×2",
+          "Potencia": "21 HP",
+          "Velocidad máx.": "60 km/h",
+          "Capacidad": "350 kg",
+          "Frenos": "Disco hidráulico",
+          "Seguridad": "Cinturón 4 puntos"
+        }
+      },
+      {
+        "sku": "ATVR-BUGGY-CAMPERO-300-FI",
+        "name": "Buggy Campero 300cc FI 4 puestos",
+        "brand": "Trail Blazer",
+        "category": "Buggy",
+        "price": 39990000,
+        "url": "https://cuatrimotosatv.com/productos/buggy-campero-300cc-fi/",
+        "specs": {
+          "Cilindraje": "300 cc",
+          "Tracción": "4×2",
+          "Potencia": "28 HP",
+          "Velocidad máx.": "80 km/h",
+          "Capacidad": "450 kg",
+          "Puestos": "4",
+          "Alimentación": "Inyección electrónica (FI)"
+        }
+      },
+      {
+        "sku": "ATVR-RANGER-350",
+        "name": "Cuatrimoto Ranger 350cc 4x4",
+        "brand": "ATV Riders",
+        "category": "Cuatrimoto",
+        "price": 27990000,
+        "url": "https://cuatrimotosatv.com/productos/cuatrimoto-ranger-350cc/",
+        "specs": {
+          "Cilindraje": "350 cc",
+          "Tracción": "4×4",
+          "Terreno": "Barro, tierra, pendiente"
+        }
+      },
+      {
+        "sku": "ATVR-GOLF-48V",
+        "name": "Carro De Golf Eléctrico",
+        "brand": "TAO Motor",
+        "category": "Carro de golf",
+        "price": 39990000,
+        "url": "https://cuatrimotosatv.com/productos/carro-de-golf-electrico/",
+        "specs": {
+          "Motor": "Eléctrico 48 V · 5 kW",
+          "Autonomía": "80 km por carga",
+          "Velocidad máx.": "60 km/h",
+          "Pasajeros": "4 con cinturón",
+          "Batería": "155 Ah",
+          "Frenos": "Disco hidráulico",
+          "Extras": "Techo, LCD, USB, reversa"
+        }
+      }
+    ]
+  },
+  "warranty": {
+    "chassisAndEngine": "P1Y",
+    "electricalParts": "P6M",
+    "url": "https://cuatrimotosatv.com/soporte/"
+  },
+  "shipping": {
+    "approximateCost": 400000,
+    "currency": "COP",
+    "scope": "Fuera de Bogotá"
+  },
+  "guides": {
+    "count": 15,
+    "url": "https://cuatrimotosatv.com/blog/",
+    "feed": "https://cuatrimotosatv.com/blog/rss.xml"
+  },
+  "notes": [
+    "Vendemos vehículos nuevos. No tenemos inventario de usados.",
+    "No somos fabricantes: distribuimos las marcas indicadas en cada ficha.",
+    "Los precios están en pesos colombianos y pueden cambiar sin aviso; la fuente vigente es la ficha de cada modelo."
+  ]
+}
